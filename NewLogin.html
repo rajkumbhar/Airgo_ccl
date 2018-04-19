@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+
+<head>
+
+
+    <title>AirGo Travels : Login</title>
+    <link  href="form.css" rel="stylesheet" type="text/css">
+</head>
+<body background="https://d3vonci41uckcv.cloudfront.net/old-images/original/4f0f4b4e-3c6a-47be-a134-13338ca71575.USA-NYC-Empire%20State.jpg">
+<div>
+
+<center>
+
+<br> </br> <br> </br> <br> </br>
+<style>
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #F0E0FB;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: black;
+    color: #F0E0FB;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: red;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:25%;"><font size="8"><b>Login</b></font></button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="checklogin.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="http://images.clipartbro.com/141/person-icon-purple-clip-art-vector-online-royalty-free-141098.svg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a target="_self" href="ContactUs.html">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<p style="text-align:center;"><font size="6" color="8DE0E9" face="Arial"><b>Login to your AirGo account</font></p></b>
+<style>
+a:link, a:visited {
+background-color: black;
+color: #F0E0FB;
+padding: 10px 15px;
+text-align:center;
+text-decoration:underline;
+font-size: 18px;
+display:inline-block;
+}
+a:hover, a:active {
+background-color:#510E7D ;
+}
+input[type=text] {
+width: 20%;
+padding: 5px 10px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 2px solid #F0E0FB;
+border-radius: 4px;
+
+color: black;
+}
+
+
+input[type=password] {
+width: 50%;
+padding: 5px 18px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 2px solid #F0E0FB;
+border-radius: 4px;
+
+color: black;
+}
+.button{
+background-color: black;
+border: none;
+color: #6C0740;
+padding: 15px 80px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+cursor:pointer;
+
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+}
+.button:hover {
+background-color:#3F0D61;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 #6C0740;
+}
+.button:active {
+background-color:#F0C7F9;
+box-shadow: 0 5px white;
+transform: translateY(4px);
+}
+</style>
+<a href="SignUp.html" target="_self">Not a member? SignUp now </a>
+<br></br>
+
+
+</div>
+</body>
+</html>
