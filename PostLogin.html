@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+
+
+
+div.container{
+width: 100%;
+border: 1px black;
+}
+
+body
+{
+background-image: url("http://file.hkt923yyt.blog.shinobi.jp/20130201_1550762.jpg");
+}
+#img1{
+float:left;
+}
+
+h1{
+text-align:center;
+font-style:oblique;
+color:#7D219E;
+font-family:"Constantine";
+font-size: 50px;
+font-variant: small-caps;
+}
+
+#ul1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0E146F;
+    clear:both;  
+}
+
+#li1 {
+    float: left;
+}
+
+a{
+font-family: Constantine;
+}
+
+#li1 a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 60px;
+    text-decoration: none;
+    font-family: "Constantine";
+    font-variant: small-caps; 
+    font-size: 20px;
+}
+#li1 a span {
+    cursor:pointer;
+    display:inline-block;
+    position: relative;
+    transition:0.5s;
+}
+#li1 a span:after {
+   content: '»';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+}
+#li1 a:hover span {
+  padding-right: 25px;
+}
+
+#li1 a:hover span:after {
+opacity:1;
+right:0;
+}
+
+#li1 a:hover:not(.active) {
+    background-color: #7D219E;
+}
+
+.active {
+    background-color: #7D219E;
+}
+
+input[type=text] {
+       box-sizing: border-box;
+       border: 2px solid #ccc;
+       font-size: 16px;
+       background-color: white;
+ }
+
+input[placeholder="Search AirGo"] {
+padding: 5px;
+}
+
+h3{
+text-align: center;
+color:#7D219E;
+font-variant: small-caps;
+font-size:25px;
+
+}
+
+#img3{
+float: right;
+clear:both;
+}
+
+#pre1{
+font-family:"Constantine";
+font-size:20px;
+
+}
+#p2{
+font-family:"Constantine";
+font-size:20px;
+text-align: right;
+}
+
+
+#img4{
+float:left;
+clear:both;
+}
+
+
+br{
+clear: both;
+}
+
+#li2 a{
+
+font-family:"Constantine";
+font-size:20px;
+color:white;
+}
+
+#pre2{
+list-style-type:none;
+font-family:"Constantine";
+clear:both;
+}
+
+footer{
+clear:both;
+background-color:#0B1054;
+text-align: left;
+padding: 1em;
+}
+ul1 {
+background:#0B1054; 
+padding:20px; 
+}
+ul1 li{
+background:#7D219E; 
+padding: 10px;
+margin-left: 40px;
+}
+
+</style>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+
+<p><img id="img1" src="airgologo.png" alt="Logo" opacity="0.2" width=400 height=150 hspace="250"><form>
+
+<style>
+.dropbtn {
+background-color:#7D219E;
+color:white;
+padding :10px;
+font-size: 20 px;
+border:2px black;
+cursor: pointer;
+}
+.dropdown {
+position:relative;
+display: inline-block;
+}
+.dropdown-content {
+display:none;
+position:absolute;
+background-color:#050B45;
+min-width:100px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+ color: white;
+    padding: 10px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #A8058D}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #A8058D;
+}
+</style>
+<div class="dropdown">
+<button class="dropbtn">COUNTRY </button>
+<div class="dropdown-content">
+        <a href="#AUD" >Australia</a>
+        <a href="#CAD" >Canada</a>
+	<a href="#SGD" >Singapore</a>
+	<a href="#GBP" >United Kingdom</a>
+	<a href="#USD" >United States</a>
+
+</div>
+</div>
+
+<br>
+</br>
+
+<ul id="ul1">
+  <li id="li1"><a class="active" href="Home.html"><span>Home</span></a></li>
+  <li id="li1"><a target="_self" href="Home.html"><span>		Logout</span></a></li>
+  <li id="li1"><a target="_self" href="Book.html"><span>Book Tickets</span></a></li>
+  <li id="li1"><a href="Cancel.html"><span>Cancel Reservation</span></a></li>
+  <li id="li1"><a target="_self" href="AboutUs.html"><span> About Us</span></a></li>
+  <li id="li1"><a target="_blank" href="Help24.html"><span>24X7 Help</span></a></li>
+  <li id="li1"><a target="_blank" href="ContactUs.html"><span>Contact Us</span></a></li>
+  <li id="li1">
+  <form>
+  <input type="text" name="search" placeholder="Search AirGo">
+  </form>
+  </li>
+</ul>
+
+<p><font size="10" color="#4AA5E2"> <center> Welcome, User. </font></p>
+<h3><marquee><font size="20" color="#7D219E">Welcome to AirGo</marquee></font></h3>
+<pre id="pre1">
+<p style="text-align:center;"><font size="4" color="#4AA5E2"><b>We at AirGo Travels wish to make the hassle of air ticket reservation a simple, convenient and affordable task.
+In a world where time and money mean everything, we  provide a smarter, simpler and cheaper approach to book flight tickets
+as you travel luxuriously around the globe.
+Created in August, 2016 AirGo Travels already has garnered many positive feedbacks from our loyal customers.</b></font></p>
+
+</pre>
+<br>
+<hr>
+<style>
+img{
+opacity:0.7;
+filter: alpha(opacity=50);
+}
+img:hover{
+opacity:1.0;
+filter: alpha(opacity=100);
+}
+</style>
+
+<p style="text-align: center;"><font face="Constantine"  size="6" color="#7D219E">RECOMMENDED AIRLINES </font></p>
+
+<div>
+
+<a href="http://www.spicejet.com/"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/SpiceJet_logo.svg/1280px-SpiceJet_logo.svg.png" height="100" width="210"/>
+</a>
+
+<a href="http://www.jetairways.com/EN/IN/Home.aspx">
+<img src="http://www.bestbrandlogo.com/logos/53434.jpg" height="100" width="210"/></a>
+ 
+<a href="https://www.goindigo.in/"><imgsrc="http://4.bp.blogspot.com/-nXL9u2Xd9RI/TwPHJMuy_SI/AAAAAAAAEA4/dRfkEgz0Ku8/s400/IndiGo_Airlines_logo.gif" height="100" width="210"/></a>
+
+<a href="https://www.goair.in/"><img src="http://www.bestbrandlogo.com/logos/23517.jpg" height="100" width="210"/></a>
+
+<a href="www.airindia.in"><img src="http://www.ch-aviation.com/portal/stock/2885.png" height="100" width="210"/></a>
+
+<a href="https://www.airvistara.com/trip/"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/Vistara_logo.svg/1253px-Vistara_logo.svg.png" height="100" width="210"/></a>
+
+</div>
+<br>
+</br>
+
+<div class="container">
+<footer>
+<h3 id="h31"><i>AirGo IN THE NEWS</i></h3>
+
+<font color="white" size="4" face="Constantine">
+<ul1>
+<li>   S&P Travels Ltd. to venture into Online airticket reservation website</li>
+<li><i>"AirGo</i> to be launched by August,2016",confirms spokesperson</li>
+<li>   Profits from <i>AirGo</i> to be proceeded to Joy Foundation, Mumbai.</li>
+<li>   Here's how you can contribute to the world while booking your tickets</li>
+<li><i>AirGo</i> looking to become a popular choice among air travellers for booking tickets</li>
+<ul1>
+
+</font>
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>
