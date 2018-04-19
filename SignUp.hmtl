@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+
+<head>
+
+
+    <title>AirGo Travels : Sign Up</title>
+    <link  href="form.css" rel="stylesheet" type="text/css">
+</head>
+<body background="http://www.magic4walls.com/wp-content/uploads/2013/12/colorful_night_city_skyline_1920x1080.jpg">
+<div>
+
+
+
+<p style="text-align:center;"><font size="6" color="8DE0E9"><i><b>Please enter all details accurately.Details marked (*) are optional.</i></font></p></b>
+<style>
+input[type=text] {
+width: 20%;
+padding: 5px 10px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 2px solid blue;
+border-radius: 4px;
+background-color:#6C0740;
+color: white;
+}
+input[type=email] {
+width: 25%;
+padding: 5px 10px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 2px solid blue;
+border-radius: 4px;
+background-color:#6C0740;
+color: white;
+}
+input[type=date] {
+width: 25%;
+padding: 5px 10px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 2px solid blue;
+border-radius: 4px;
+background-color:#6C0740;
+color: white;
+}
+input[type=radio] {
+width: 25%;
+padding: 5px 10px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 2px solid blue;
+border-radius: 4px;
+background-color:#6C0740;
+color: white;
+}
+input[type=number] {
+width: 25%;
+padding: 5px 10px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 2px solid blue;
+border-radius: 4px;
+background-color:#6C0740;
+color: white;
+}
+input[type=password] {
+width: 10%;
+padding: 5px 10px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 2px solid blue;
+border-radius: 4px;
+background-color:#6C0740;
+color: white;
+}
+.button {
+background-color: white;
+border: none;
+color: #6C0740;
+padding: 20px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+cursor:pointer;
+border-radius: 50%;
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+}
+.button:hover {
+background-color:#F0C7F9;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 #6C0740;
+}
+.button:active {
+background-color:#F0C7F9;
+box-shadow: 0 5px white;
+transform: translateY(4px);
+}
+</style>
+<form
+ name="myForm" action="register.php"
+onsubmit="return ValidateEmail()" method="post">
+
+<fieldset>
+<legend style="text-align:center;"><font size="4" color="blue"> Personal Details </font></legend>
+<font color="8DE0E9" face="Arial" >
+    First Name:
+        <input type="text" name="name" maxlength="20" required>
+    Middle Name*:
+    <input type="text" name="mname" maxlength="20">
+    Last Name:
+    <input type="text" name="lname" maxlength="20">
+    <br><br/>
+       E-mail address:
+ 	 <input type="email" name="email"  required /> 
+        <br />
+    <br><br/>
+    Date Of Birth (MM/DD/YYYY):
+        <input type="date" name="dateofbirth" required>
+    <br><br/>
+    Gender: Choose one of the following options <br> 
+    <input type="radio" name="gender" required> Male <br> <br/>
+    <input type="radio" name="gender" required> Female <br> </br>
+    <input type="radio" name="gender" required> Other
+<br> 
+    <br/>
+    Contact Number: 
+    <input type="number" name="mobno" maxlength="10" required><br> <br/>
+</fieldset>
+
+<fieldset>
+<legend style="text-align:center;"><font size="4" color="blue"> Account Details </font></legend>
+    
+    Username:
+<input type="text" name="uname" style="width:10%" required>
+<br>
+<br/>
+   Create Password:
+	<input type="password" name="password" min-length="6" max-length="10" style="width:10%" required>
+<br> <br/>
+	Confirm password:
+	<input type="password" name="pw" min-length="6" max-length="10" style="width:10%" required>
+   <br><br/>
+</fieldset>
+<center>
+<input type="submit" value="Register" onclick="ValidateEmail(document.myForm.email)"/>
+
+       </center> 
+</font>
+    
+<script>
+function ValidateEmail(inputText)  
+{  
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+if(inputText.value.match(mailformat))  
+{  
+document.myForm.email.focus();  
+return true;  
+}  
+else  
+{  
+alert("You have entered an invalid email address!");  
+document.myForm.email.focus(); 
+return false;  
+}  
+}  
+
+</script>
+</form>
+</div>
+</body>
+</html>
