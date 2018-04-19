@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+
+<head>
+
+
+    <title>AirGo Travels : Reserve ticket </title>
+    <link  href="form.css" rel="stylesheet" type="text/css">
+</head>
+<body background="http://www.magic4walls.com/wp-content/uploads/2013/12/colorful_night_city_skyline_1920x1080.jpg">
+<div>
+
+
+
+<p style="text-align:center;"><font size="6" color="8DE0E9"><i><b> Welcome to AirGo ticket reservation. </i></font></p></b>
+<style>
+input[type=text] {
+width: 20%;
+padding: 5px 10px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 2px solid blue;
+border-radius: 4px;
+background-color:#6C0740;
+color: white;
+}
+input[type=email] {
+width: 25%;
+padding: 5px 10px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 2px solid blue;
+border-radius: 4px;
+background-color:#6C0740;
+color: white;
+}
+input[type=date] {
+width: 25%;
+padding: 5px 10px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 2px solid blue;
+border-radius: 4px;
+background-color:#6C0740;
+color: white;
+}
+input[type=radio] {
+width: 25%;
+padding: 5px 10px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 2px solid blue;
+border-radius: 4px;
+background-color:#6C0740;
+color: white;
+}
+input[type=number] {
+width: 25%;
+padding: 5px 10px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 2px solid blue;
+border-radius: 4px;
+background-color:#6C0740;
+color: white;
+}
+input[type=password] {
+width: 10%;
+padding: 5px 10px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 2px solid blue;
+border-radius: 4px;
+background-color:#6C0740;
+color: white;
+}
+.button {
+background-color: white;
+border: none;
+color: #6C0740;
+padding: 20px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+cursor:pointer;
+border-radius: 50%;
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+}
+.button:hover {
+background-color:#F0C7F9;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 #6C0740;
+}
+.button:active {
+background-color:#F0C7F9;
+box-shadow: 0 5px white;
+transform: translateY(4px);
+}
+input:checked {
+height: 20px;
+width: 20px;
+}
+
+</style>
+
+<form
+ name="myForm" action="bregister.php"
+onsubmit="return validateForm()" method="post">
+ <center>
+<p><font size="5" color="white" face="Arial"> Enter valid preferences </font></p>
+ <br>
+</br>
+<font size="5" color="white" face="Arial">
+<input type="radio" name="return" > Return
+<input type="radio" name="One-way"> One-way
+<br>
+</br>
+From: <input type="text" name="fromsrc" required> <br> </br>
+To: <input type="text" name="todest" required> <br> </br>
+
+Date of departure: <input type="date" name="dept" required> <br> </br>
+Cabin Class: 
+<select id="class" name="class">
+<option value="Eco"> Economy </option>
+<option value="Bus"> Business </option>
+</select>
+<br> </br>
+
+Adult(s):
+<select id="adult" name="adult">
+<option value="1"> 1 </option>
+<option value="2"> 2 </option>
+<option value="3"> 3 </option>
+<option value="4"> 4 </option>
+<option value="5"> 5 </option>
+<option value="6"> 6 </option>
+<option value="7"> 7 </option>
+<option value="8"> 8 </option>
+<option value="9"> 9 </option>
+<option value="10"> 10 </option>
+</select>
+<br> </br>
+
+Child(ren):
+<select id="child" name="child">
+<option value="0"> 0 </option>
+<option value="1"> 1 </option>
+<option value="2"> 2 </option>
+<option value="3"> 3 </option>
+<option value="4"> 4 </option>
+<option value="5"> 5 </option>
+<option value="6"> 6 </option>
+<option value="7"> 7 </option>
+<option value="8"> 8s </option>
+<option value="9"> 9 </option>
+<option value="10"> 10 </option>
+</select>
+<br> </br>
+
+Unaccompanied minor? 
+<input type="radio" name="yes"> Yes 
+<input type="radio" name="no"> No
+<br> </br>
+</font>
+</center>
+<center>
+<button class="button"> Submit preferences </button>
+       </center> 
+    
+<script>
+function validateForm()
+{
+var x= document.forms["myForm"]["fromsrc"]["todest"]["dept"]["adult"]["child"].value;
+var mail;
+            if (x == null || x == "")
+            {
+                alert("Must be filled out");
+                return false;
+            }
+            else
+            {
+                document.myForm.submit();
+            }
+
+}
+</script>
+</form>
+</div>
+</body>
+</html>
